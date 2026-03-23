@@ -72,6 +72,7 @@
       background: linear-gradient(to bottom, #eef2ff, #f9fafb);
     }
 
+    /* IMAGE FIX (FINAL) */
     .profile-container {
       width: 180px;
       height: 180px;
@@ -80,15 +81,13 @@
       overflow: hidden;
       background: #ffffff;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .profile-container img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* KEY FIX */
+      object-fit: cover;
+      object-position: center 20%;
     }
 
     h1 {
@@ -138,7 +137,6 @@
       color: white;
     }
 
-    /* SECTIONS */
     .section-title {
       text-align: center;
       font-size: 2rem;
@@ -150,14 +148,12 @@
       border-radius: 15px;
     }
 
-    /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
 
-    /* CARDS */
     .card {
       background: white;
       padding: 20px;
@@ -220,8 +216,7 @@
 
   <p>
     Associate Manager with 15+ years in IT and 7+ years in Agile Delivery,
-    Scrum Mastery, and Business Analysis. I simplify complexity, align teams,
-    and drive real business outcomes.
+    Scrum Mastery, and Business Analysis.
   </p>
 
 <a class="btn" href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank">LinkedIn</a> <a class="btn btn-secondary" href="Karthik_Dave_Resume.pdf" target="_blank">Download Resume</a>
@@ -231,9 +226,8 @@
 <section id="about">
   <h2 class="section-title">About Me</h2>
   <p>
-    I bring over 15+ years of IT experience with deep focus on Agile delivery,
-    Scrum practices, and business analysis. My strength lies in connecting
-    business vision with execution, ensuring teams deliver measurable outcomes.
+    I connect business vision with delivery execution, enabling teams to deliver
+    meaningful outcomes across SCM and enterprise transformation initiatives.
   </p>
 </section>
 
@@ -242,15 +236,15 @@
   <div class="grid">
     <div class="card">
       <b>Associate Manager – Accenture</b>
-      <p>Driving Agile delivery and transformation initiatives.</p>
+      <p>Driving Agile delivery and transformation.</p>
     </div>
     <div class="card">
-      <b>15+ Years IT Experience</b>
-      <p>Enterprise solutions and digital programs.</p>
+      <b>15+ Years IT</b>
+      <p>Enterprise solutions & digital programs.</p>
     </div>
     <div class="card">
       <b>7+ Years Agile</b>
-      <p>Scrum Master, Agile Delivery, Business Analysis.</p>
+      <p>Scrum Master, BA, Delivery.</p>
     </div>
   </div>
 </section>
@@ -267,19 +261,19 @@
 </section>
 
 <section id="scwk" class="section-alt">
-  <h2 class="section-title">SCWK – Scrum & Coffee with Karthik</h2>
+  <h2 class="section-title">SCWK</h2>
   <div class="grid">
     <div class="card">
       <b>💡 Real Agile Talk</b>
-      <p>Simple, practical insights from real teams.</p>
+      <p>Simple, practical insights.</p>
     </div>
     <div class="card">
       <b>⚡ Practical Learning</b>
-      <p>Breaking down complexity into clarity.</p>
+      <p>Breaking complexity into clarity.</p>
     </div>
     <div class="card">
       <b>🚀 Career Growth</b>
-      <p>Helping professionals grow in Agile roles.</p>
+      <p>Helping professionals grow.</p>
     </div>
   </div>
 </section>
@@ -290,7 +284,7 @@
 </section>
 
 <footer>
-  Built with clarity, consistency, and a passion for simplifying Agile. | © 2026 Karthik Dave
+  © 2026 Karthik Dave
 </footer>
 
 </body>
