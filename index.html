@@ -4,35 +4,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Karthik Dave | Agile Leader & SCWK</title>
 
 <style>
 html { scroll-behavior: smooth; }
-section { scroll-margin-top: 100px; }
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding-top: 80px;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f8fafc;
-  color: #1f2937;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
 }
 
-/* NAVBAR */
+/* FIXED NAVBAR */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(10px);
-  z-index: 9999;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 nav {
   max-width: 1100px;
   margin: auto;
-  padding: 14px 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -40,24 +40,24 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 18px;
+  gap: 15px;
+  margin: 0;
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px 60px;
-  background: linear-gradient(to bottom, #eef2ff, #ffffff);
+nav a {
+  text-decoration: none;
+  color: #333;
 }
 
-/* SECTIONS */
+/* FIX: prevent section hiding */
 section {
+  scroll-margin-top: 100px;
   max-width: 1100px;
   margin: auto;
-  padding: 80px 20px;
+  padding: 70px 20px;
   opacity: 0;
   transform: translateY(40px);
-  transition: 0.8s;
+  transition: 0.6s;
 }
 
 section.show {
@@ -65,59 +65,39 @@ section.show {
   transform: translateY(0);
 }
 
-.section-title {
+.hero {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 25px;
+  padding: 120px 20px 60px;
+  background: #eef2ff;
 }
+
+h1 { margin: 10px 0; }
 
 .card {
-  background: white;
+  background: #fff;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-bottom: 15px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* GRID */
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
 
-/* SCWK PREMIUM */
-.scwk-box {
-  background: linear-gradient(to right, #eef2ff, #f5f3ff);
-  padding: 40px;
-  border-radius: 16px;
+.scwk {
+  background: #eef2ff;
+  padding: 30px;
+  border-radius: 12px;
 }
 
-.scwk-title {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.highlight {
-  color: #2563eb;
-  font-weight: 600;
-}
-
-.scwk-pill {
-  background: #e0e7ff;
-  padding: 8px 14px;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 5px;
-  font-size: 14px;
-}
-
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #111827;
-  color: #d1d5db;
+  background: #111;
+  color: #fff;
 }
 </style>
 
@@ -127,7 +107,7 @@ footer {
 
 <header>
 <nav>
-<div><strong>Karthik Dave</strong></div>
+<div><b>Karthik Dave</b></div>
 <ul>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#skills">Skills</a></li>
@@ -142,19 +122,19 @@ footer {
 
 <section class="hero show">
 <h1>Karthik Dave</h1>
-<p>Agile Leader | Scrum Master | Business Analyst</p>
-<p><strong>14+ Years Experience | SCM Domain Specialist</strong></p>
+<p>Agile Scrum Master | Business Analyst</p>
+<p><b>15+ Years | SCM Domain | CSM Certified</b></p>
 </section>
 
 <!-- EXPERIENCE -->
 
 <section id="experience">
-<h2 class="section-title">Professional Experience</h2>
+<h2>Experience</h2>
 
 <div class="card">Accenture – Associate Manager</div>
-<div class="card">YASH Technologies – BA & Scrum Master</div>
-<div class="card">Mphasis – Senior BA</div>
-<div class="card">BDO Consulting (Qatar)</div>
+<div class="card">YASH Technologies – BA & Scrum Master (Team Size: 17)</div>
+<div class="card">Mphasis – Senior Business Analyst</div>
+<div class="card">BDO Consulting – Qatar</div>
 <div class="card">Ford Technology Services</div>
 <div class="card">R Systems</div>
 <div class="card">Allsec Technologies</div>
@@ -164,71 +144,69 @@ footer {
 <!-- SKILLS -->
 
 <section id="skills">
-<h2 class="section-title">Skills</h2>
+<h2>Skills</h2>
 
 <div class="grid">
 <div class="card">Agile, Scrum, Stakeholder Mgmt</div>
 <div class="card">Supply Chain, Logistics</div>
 <div class="card">JIRA, ADO</div>
-<div class="card">Data Analytics</div>
+<div class="card">Business Analysis</div>
 </div>
 
 </section>
 
-<!-- SCWK FULL -->
+<!-- SCWK -->
 
 <section id="scwk">
+<div class="scwk">
 
-<div class="scwk-box">
-
-<div class="scwk-title">
-SCWK – <span class="highlight">Scrum With Karthik</span>
-</div>
+<h2>SCWK – Scrum With Karthik</h2>
 
 <p>
-SCWK is a <strong>personal Agile knowledge brand</strong> focused on simplifying complex Scrum and Agile concepts into practical, real-world insights.
+SCWK is a <b>personal Agile knowledge brand</b> focused on simplifying Scrum and Agile concepts into real-world understanding.
 </p>
 
 <p>
-It is designed for <strong>professionals, Scrum Masters, Business Analysts, and teams</strong> who want clarity beyond theory.
+It helps <b>Scrum Masters, BAs, and professionals</b> move beyond theory and apply Agile in actual projects.
 </p>
 
-<div style="margin-top:20px;">
-<span class="scwk-pill">SCWK Lites – Quick concepts</span>
-<span class="scwk-pill">SCWK Bites – Practical breakdowns</span>
-<span class="scwk-pill">SCWK Dose – Deep insights</span>
-</div>
-
-<div class="grid" style="margin-top:25px;">
+<div class="grid">
 <div class="card">
-<strong>🎯 Mission</strong><br>
-Make Agile practical, not theoretical
+<b>SCWK Lites</b><br>
+Quick Agile concepts
 </div>
 
 <div class="card">
-<strong>🚀 Impact</strong><br>
-Helping professionals apply Scrum in real projects
+<b>SCWK Bites</b><br>
+Practical breakdowns
 </div>
 
 <div class="card">
-<strong>💡 Focus</strong><br>
-Real scenarios, not textbook definitions
+<b>SCWK Dose</b><br>
+Deep insights & thought leadership
 </div>
 </div>
 
+<div class="card">
+<b>Mission:</b> Make Agile practical, not theoretical
 </div>
 
+<div class="card">
+<b>Focus:</b> Real-world scenarios, not textbook definitions
+</div>
+
+</div>
 </section>
 
 <!-- POSTS -->
 
 <section id="posts">
-<h2 class="section-title">SCWK Insights</h2>
+<h2>SCWK Insights</h2>
 
 <div class="grid">
-<div class="card">⚡ Agile is not meetings</div>
-<div class="card">⚡ Velocity ≠ performance</div>
-<div class="card">⚡ Scrum Master = change agent</div>
+<div class="card">Agile is not meetings</div>
+<div class="card">Velocity ≠ performance</div>
+<div class="card">Scrum Master = change agent</div>
 </div>
 
 </section>
@@ -236,10 +214,12 @@ Real scenarios, not textbook definitions
 <!-- CONTACT -->
 
 <section id="contact">
-<h2 class="section-title">Contact</h2>
+<h2>Contact</h2>
+
 <div class="card">
-Connect: www.linkedin.com/in/karthik-dave-csm
+LinkedIn: https://www.linkedin.com/in/karthik-dave-csm
 </div>
+
 </section>
 
 <footer>
