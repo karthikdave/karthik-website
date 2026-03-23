@@ -1,186 +1,81 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karthik Dave | Agile Leader</title>
+<title>Karthik Dave</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-* {margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;}
-body {background:#f5f7fb;color:#111;padding-top:80px;}
+body {
+  font-family: Arial;
+  margin: 0;
+  padding-top: 60px;
+}
 
-/* NAVBAR */
 .nav {
-  position:fixed;top:0;width:100%;
-  background:#fff;
-  border-bottom:1px solid #eee;
-  display:flex;justify-content:space-between;
-  padding:15px 40px;
-  z-index:1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
 }
-.nav a {text-decoration:none;margin-left:20px;color:#333;}
 
-/* SECTIONS */
+.nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
 section {
-  padding:80px 20px;
-  max-width:1100px;
-  margin:auto;
-  scroll-margin-top:100px;
+  padding: 60px 20px;
 }
 
-/* HERO */
-.hero {
-  display:flex;
-  align-items:center;
-  gap:30px;
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.hero img {
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  object-fit:cover;
-  object-position:top;
-}
-.hero h1 {font-size:32px;}
-.hero p {color:#555;margin-top:8px;}
 
-/* BUTTONS */
 .btn {
-  display:inline-block;
-  margin-top:15px;
-  margin-right:10px;
-  padding:10px 18px;
-  border-radius:8px;
-  text-decoration:none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  border: 1px solid black;
 }
-.primary {background:#111;color:#fff;}
-.secondary {background:#eaeaea;color:#111;}
-
-/* CARDS */
-.card {
-  background:#fff;
-  padding:20px;
-  border-radius:12px;
-  margin-top:15px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* GRID */
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
-}
-
-/* CONTACT */
-.contact {text-align:center;}
 </style>
 
 </head>
 
 <body>
 
-<!-- NAV -->
-
 <div class="nav">
-  <div><strong>Karthik Dave</strong></div>
-  <div>
-    <a href="#experience">Experience</a>
-    <a href="#scwk">SCWK</a>
-    <a href="#insights">Insights</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <a href="#home">Home</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<!-- HERO -->
+<section id="home">
+  <h1>Karthik Dave</h1>
+  <img src="profile.jpg">
+  <p>Agile Scrum Master | BA | 15+ Years</p>
 
-<section>
-  <div class="hero">
-    <img src="profile.jpg" alt="Profile">
-    <div>
-      <h1>Karthik Dave</h1>
-      <p>CSM® | Agile Scrum Master | Business Analyst | 15+ Years</p>
+  <br>
 
-```
-  <a href="Karthik_Dave_Resume.pdf" target="_blank" class="btn primary">
-    View Resume
-  </a>
+<a href="Karthik_Dave_Resume.pdf" target="_blank" class="btn">View Resume</a> <a href="Karthik_Dave_Resume.pdf" download class="btn">Download Resume</a>
 
-  <a href="Karthik_Dave_Resume.pdf" download class="btn secondary">
-    Download Resume
-  </a>
-</div>
-```
-
-  </div>
 </section>
-
-<!-- EXPERIENCE -->
 
 <section id="experience">
   <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Accenture</h3>
-    <p>Agile delivery, sprint execution, stakeholder management.</p>
-  </div>
-
-  <div class="card">
-    <h3>Yash Technologies</h3>
-    <p>Scrum Master & BA – Led 17-member team (Dev, QA, Architect).</p>
-  </div>
-
-  <div class="card">
-    <h3>Previous Roles</h3>
-    <p>Mphasis • BDO • Ford • R Systems • Allsec Technologies</p>
-  </div>
+  <p>Accenture, Yash Technologies, Mphasis, BDO, Ford, R Systems, Allsec</p>
 </section>
 
-<!-- SCWK -->
-
-<section id="scwk">
-  <h2>SCWK</h2>
-
-  <div class="card">
-    <p><strong>SCWK = Scrum • Content • Wisdom • Knowledge</strong></p>
-    <p>Creating Agile insights via SCWK Doses, Bites & AI Shots to simplify real-world Scrum.</p>
-  </div>
-</section>
-
-<!-- INSIGHTS -->
-
-<section id="insights">
-  <h2>Insights</h2>
-
-  <div class="grid">
-
-```
-<div class="card">
-  <h3>Agile is NOT Standups</h3>
-  <p>Daily standups don’t make you Agile. Delivery mindset does.</p>
-  <a href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank">View</a>
-</div>
-
-<div class="card">
-  <h3>Velocity Myth</h3>
-  <p>Velocity is for planning, not performance.</p>
-  <a href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank">View</a>
-</div>
-```
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
+<section id="contact">
   <h2>Contact</h2>
-  <p>Let’s connect for Agile roles or collaboration</p>
-
-  <a href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank" class="btn primary">
-    Connect on LinkedIn
-  </a>
+  <a href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank">LinkedIn</a>
 </section>
 
 </body>
