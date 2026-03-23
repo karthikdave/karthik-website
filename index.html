@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Karthik Dave | Agile Leader & SCWK</title>
 
 <style>
@@ -14,25 +13,26 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   padding-top: 80px;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #222;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
 }
 
-/* FIXED NAVBAR */
+/* NAVBAR */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #ffffff;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 nav {
   max-width: 1100px;
   margin: auto;
-  padding: 15px;
+  padding: 14px 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -40,64 +40,110 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 18px;
   margin: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #374151;
+  font-weight: 500;
 }
 
-/* FIX: prevent section hiding */
+/* FIX scroll overlap */
 section {
   scroll-margin-top: 100px;
   max-width: 1100px;
   margin: auto;
-  padding: 70px 20px;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.6s;
+  padding: 80px 20px;
 }
 
-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* HERO */
 .hero {
   text-align: center;
   padding: 120px 20px 60px;
-  background: #eef2ff;
+  background: linear-gradient(to bottom, #eef2ff, #ffffff);
 }
 
-h1 { margin: 10px 0; }
+.profile-container {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
 
+.profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+/* TEXT */
+h1 { margin: 10px 0; font-size: 2.4rem; }
+h2 { text-align: center; margin-bottom: 25px; }
+
+/* CARDS */
 .card {
   background: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: 0.3s;
 }
 
+.card:hover { transform: translateY(-5px); }
+
+/* GRID */
 .grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
 
+/* SCWK */
 .scwk {
-  background: #eef2ff;
-  padding: 30px;
-  border-radius: 12px;
+  background: linear-gradient(to right, #eef2ff, #f5f3ff);
+  padding: 40px;
+  border-radius: 16px;
 }
 
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
-  color: #fff;
+  background: #111827;
+  color: #d1d5db;
 }
 </style>
 
@@ -107,7 +153,7 @@ footer {
 
 <header>
 <nav>
-<div><b>Karthik Dave</b></div>
+<div><strong>Karthik Dave</strong></div>
 <ul>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#skills">Skills</a></li>
@@ -120,16 +166,20 @@ footer {
 
 <!-- HERO -->
 
-<section class="hero show">
+<section class="hero fade show">
+<div class="profile-container">
+<img src="profile.jpg" alt="Karthik Dave">
+</div>
+
 <h1>Karthik Dave</h1>
-<p>Agile Scrum Master | Business Analyst</p>
-<p><b>15+ Years | SCM Domain | CSM Certified</b></p>
+<p><b>Agile Scrum Master | Business Analyst</b></p>
+<p>15+ Years | SCM Domain | CSM Certified</p>
 </section>
 
 <!-- EXPERIENCE -->
 
-<section id="experience">
-<h2>Experience</h2>
+<section id="experience" class="fade">
+<h2>Professional Experience</h2>
 
 <div class="card">Accenture – Associate Manager</div>
 <div class="card">YASH Technologies – BA & Scrum Master (Team Size: 17)</div>
@@ -143,7 +193,7 @@ footer {
 
 <!-- SKILLS -->
 
-<section id="skills">
+<section id="skills" class="fade">
 <h2>Skills</h2>
 
 <div class="grid">
@@ -157,50 +207,30 @@ footer {
 
 <!-- SCWK -->
 
-<section id="scwk">
+<section id="scwk" class="fade">
 <div class="scwk">
 
 <h2>SCWK – Scrum With Karthik</h2>
 
 <p>
-SCWK is a <b>personal Agile knowledge brand</b> focused on simplifying Scrum and Agile concepts into real-world understanding.
-</p>
-
-<p>
-It helps <b>Scrum Masters, BAs, and professionals</b> move beyond theory and apply Agile in actual projects.
+SCWK is a <b>personal Agile brand</b> focused on simplifying Scrum into real-world application.
 </p>
 
 <div class="grid">
-<div class="card">
-<b>SCWK Lites</b><br>
-Quick Agile concepts
+<div class="card"><b>Lites</b><br>Quick learning</div>
+<div class="card"><b>Bites</b><br>Practical breakdowns</div>
+<div class="card"><b>Dose</b><br>Deep insights</div>
 </div>
 
-<div class="card">
-<b>SCWK Bites</b><br>
-Practical breakdowns
-</div>
-
-<div class="card">
-<b>SCWK Dose</b><br>
-Deep insights & thought leadership
-</div>
-</div>
-
-<div class="card">
-<b>Mission:</b> Make Agile practical, not theoretical
-</div>
-
-<div class="card">
-<b>Focus:</b> Real-world scenarios, not textbook definitions
-</div>
+<div class="card"><b>Mission:</b> Make Agile practical</div>
+<div class="card"><b>Focus:</b> Real-world scenarios</div>
 
 </div>
 </section>
 
 <!-- POSTS -->
 
-<section id="posts">
+<section id="posts" class="fade">
 <h2>SCWK Insights</h2>
 
 <div class="grid">
@@ -213,12 +243,12 @@ Deep insights & thought leadership
 
 <!-- CONTACT -->
 
-<section id="contact">
-<h2>Contact</h2>
+<section id="contact" class="fade">
+<h2>Let’s Connect</h2>
 
-<div class="card">
-LinkedIn: https://www.linkedin.com/in/karthik-dave-csm
-</div>
+<a class="btn" href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank">
+Connect on LinkedIn
+</a>
 
 </section>
 
@@ -227,14 +257,14 @@ LinkedIn: https://www.linkedin.com/in/karthik-dave-csm
 </footer>
 
 <script>
-const sections = document.querySelectorAll("section");
+const faders = document.querySelectorAll(".fade");
 
 window.addEventListener("scroll", () => {
   const trigger = window.innerHeight * 0.85;
 
-  sections.forEach(section => {
-    if(section.getBoundingClientRect().top < trigger){
-      section.classList.add("show");
+  faders.forEach(el => {
+    if(el.getBoundingClientRect().top < trigger){
+      el.classList.add("show");
     }
   });
 });
