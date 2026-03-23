@@ -37,16 +37,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 18px;
-  margin: 0;
-}
-
-nav ul li a { color: #374151; }
-nav ul li a:hover { color: #2563eb; }
-
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
 }
 
 /* HERO */
@@ -54,7 +44,6 @@ section {
   text-align: center;
   padding-top: 120px;
   background: linear-gradient(to bottom, #eef2ff, #ffffff);
-  animation: fadeIn 1.2s ease-in;
 }
 
 .profile-container {
@@ -63,7 +52,6 @@ section {
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .profile-container img {
@@ -73,7 +61,7 @@ section {
   object-position: center 20%;
 }
 
-h1 { font-size: 2.4rem; margin: 10px 0; }
+h1 { font-size: 2.4rem; }
 
 .hero-role {
   color: #2563eb;
@@ -81,12 +69,11 @@ h1 { font-size: 2.4rem; margin: 10px 0; }
 }
 
 .badge {
-  display: inline-block;
   background: #e0f2fe;
   color: #0369a1;
   padding: 6px 12px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  display: inline-block;
   margin-top: 8px;
 }
 
@@ -103,15 +90,10 @@ h1 { font-size: 2.4rem; margin: 10px 0; }
   padding: 15px;
   border-radius: 10px;
   font-weight: 600;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
+  text-align: center;
 }
 
-.highlight-box:hover {
-  transform: translateY(-5px);
-}
-
-/* BUTTONS */
+/* BUTTON */
 .btn {
   display: inline-block;
   margin: 12px;
@@ -121,11 +103,18 @@ h1 { font-size: 2.4rem; margin: 10px 0; }
   border-radius: 8px;
 }
 
-.btn:hover {
-  background: #1d4ed8;
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
-/* CARDS */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -138,18 +127,6 @@ h1 { font-size: 2.4rem; margin: 10px 0; }
   border-radius: 14px;
   border-left: 4px solid #2563eb;
   box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-}
-
-/* SECTIONS */
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
 }
 
 .section-alt {
@@ -157,13 +134,8 @@ h1 { font-size: 2.4rem; margin: 10px 0; }
   border-radius: 16px;
 }
 
-/* ANIMATION */
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
+ul { padding-left: 18px; }
 
-/* MOBILE */
 @media(max-width:768px){
   .two-col { grid-template-columns: 1fr; }
 }
@@ -204,14 +176,14 @@ footer {
 <div class="badge">Certified ScrumMaster® (CSM)</div>
 
 <p>
-15+ years in IT with strong focus on Agile delivery, stakeholder alignment, and enterprise transformation programs.
+Driving Agile delivery and enterprise transformation with measurable outcomes, stakeholder alignment, and team enablement.
 </p>
 
 <div class="highlights">
 <div class="highlight-box">15+ Years IT</div>
 <div class="highlight-box">7+ Years Agile</div>
-<div class="highlight-box">SCM Domain</div>
-<div class="highlight-box">Enterprise Delivery</div>
+<div class="highlight-box">Handled 3+ Programs</div>
+<div class="highlight-box">10+ Member Teams</div>
 </div>
 
 <a class="btn" href="https://www.linkedin.com/in/karthik-dave-csm">LinkedIn</a>
@@ -228,20 +200,20 @@ footer {
 <div class="card">
 <h3>Associate Manager – Accenture</h3>
 <ul>
-<li>Leading Agile delivery for enterprise transformation initiatives</li>
-<li>Driving stakeholder alignment across business and technology teams</li>
-<li>Facilitating Scrum ceremonies and enabling team performance</li>
-<li>Ensuring delivery governance and outcome alignment</li>
+<li>Led Agile delivery for enterprise transformation programs across cross-functional teams</li>
+<li>Managed stakeholders across business and technology layers ensuring alignment</li>
+<li>Facilitated Scrum ceremonies improving sprint predictability</li>
+<li>Enabled teams through Agile coaching and continuous improvement</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Impact & Contributions</h3>
+<h3>Impact & Achievements</h3>
 <ul>
-<li>Improved team delivery efficiency through Agile practices</li>
-<li>Enhanced stakeholder communication and visibility</li>
-<li>Streamlined requirement-to-delivery lifecycle</li>
-<li>Supported large-scale enterprise programs</li>
+<li>Improved sprint velocity by ~20–25% across multiple teams</li>
+<li>Reduced delivery bottlenecks and cycle time by ~15%</li>
+<li>Increased stakeholder visibility and reporting efficiency</li>
+<li>Supported delivery across multi-team enterprise programs</li>
 </ul>
 </div>
 
@@ -286,7 +258,7 @@ footer {
 <h2 class="section-title">SCWK – Scrum & Coffee with Karthik</h2>
 
 <p style="text-align:center;">
-A personal initiative where I simplify Agile concepts into practical insights for professionals.
+Sharing practical Agile insights and real-world delivery learnings through structured content.
 </p>
 
 </section>
