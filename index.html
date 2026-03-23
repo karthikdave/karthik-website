@@ -1,294 +1,98 @@
-<!DOCTYPE html>
+<!-- RESUME SECTION -->
+<section id="resume" class="section">
+  <div class="container">
+    
+    <h2 class="section-title">Resume</h2>
+    <p class="section-subtitle">
+      Agile Leader | Scrum Master (CSM®) | Business Analyst
+    </p>
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karthik Dave | Agile Leader</title>
+    <div class="resume-card">
+      
+      <p>
+        Certified Scrum Master with 5+ years of experience leading Agile teams, 
+        driving delivery excellence, and enabling high-performing squads across 
+        enterprise environments like Accenture and YASH Technologies.
+      </p>
+
+      <div class="resume-buttons">
+        
+        <!-- VIEW RESUME -->
+        <a href="./Karthik_Dave_Resume.pdf#toolbar=1" 
+           target="_blank" 
+           class="btn primary">
+           👁 View Resume
+        </a>
+
+        <!-- DOWNLOAD RESUME -->
+        <a href="./Karthik_Dave_Resume.pdf" 
+           download="Karthik_Dave_Resume.pdf"
+           class="btn secondary">
+           ⬇ Download Resume
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 <style>
-html { scroll-behavior: smooth; }
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding-top: 80px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #ffffff;
-  color: #1d1d1f;
-}
-
-/* NAVBAR */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(12px);
-  z-index: 999;
-  border-bottom: 1px solid #eee;
-}
-
-nav {
-  max-width: 1100px;
-  margin: auto;
-  padding: 16px 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 140px 20px 80px;
-}
-
-.profile-container {
-  width: 180px;
-  height: 180px;
-  margin: auto;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 15px 0;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.badge {
-  margin-top: 10px;
-  padding: 6px 12px;
-  background: #f1f5f9;
-  border-radius: 20px;
-  display: inline-block;
-}
-
-/* BUTTONS */
-.btn {
-  padding: 14px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-}
-
-.primary {
-  background: black;
-  color: white;
-}
-
-.secondary {
-  border: 1px solid #ccc;
-  color: #333;
-}
-
-/* SECTIONS */
-section {
-  scroll-margin-top: 100px;
-  max-width: 1100px;
-  margin: auto;
+/* ===== RESUME SECTION ===== */
+.section {
   padding: 80px 20px;
 }
 
-/* GRID */
-.grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-/* CARD */
-.card {
-  background: #fff;
-  padding: 22px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-  transition: 0.3s;
+.section-subtitle {
+  color: #666;
+  margin-bottom: 30px;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-}
-
-/* SCWK */
-.scwk {
-  background: linear-gradient(to right, #f8fafc, #eef2ff);
-  padding: 50px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-/* POSTS */
-.post iframe {
-  border-radius: 12px;
-  width: 100%;
-}
-
-/* ANIMATION */
-.fade {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
+.resume-card {
+  background: #ffffff;
   padding: 30px;
-  color: #777;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-width: 600px;
+}
+
+.resume-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #000;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #333;
+}
+
+.btn.secondary {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.btn.secondary:hover {
+  background: #ddd;
 }
 </style>
-
-</head>
-
-<body>
-
-<header>
-<nav>
-<div><strong>Karthik Dave</strong></div>
-<ul>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#scwk">SCWK</a></li>
-<li><a href="#posts">Insights</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-
-<!-- HERO -->
-
-<section class="hero fade show">
-
-<div class="profile-container">
-<img src="profile.jpg">
-</div>
-
-<h1>Karthik Dave</h1>
-<div class="subtitle">Agile Leader • Scrum Master • Business Analyst</div>
-<div class="badge">15+ Years • SCM • CSM Certified</div>
-
-<div>
-<a class="btn primary" href="Karthik_Dave_Resume.pdf" download>
-Download Resume
-</a>
-
-<a class="btn secondary" 
-href="https://raw.githubusercontent.com/karthikdave/karthik-profile/main/Karthik_Dave_Resume.pdf" 
-target="_blank">
-View Resume </a>
-
-</div>
-
-</section>
-
-<!-- EXPERIENCE -->
-
-<section id="experience" class="fade">
-<h2>Experience</h2>
-
-<div class="grid">
-<div class="card">Accenture – Associate Manager</div>
-<div class="card">YASH Technologies – Scrum Master (Team: 17)</div>
-<div class="card">Mphasis – Senior BA</div>
-<div class="card">BDO Consulting – Qatar</div>
-<div class="card">Ford Technology Services</div>
-<div class="card">R Systems</div>
-<div class="card">Allsec Technologies</div>
-</div>
-
-</section>
-
-<!-- SCWK -->
-
-<section id="scwk" class="fade">
-<div class="scwk">
-
-<h2>SCWK – Scrum With Karthik</h2>
-
-<p>A personal Agile brand simplifying Scrum into real-world execution.</p>
-
-<div class="grid">
-<div class="card">Lites – Quick learning</div>
-<div class="card">Bites – Practical breakdowns</div>
-<div class="card">Dose – Deep insights</div>
-</div>
-
-</div>
-</section>
-
-<!-- POSTS -->
-
-<section id="posts" class="fade">
-<h2>Latest Insights</h2>
-
-<div class="grid">
-
-<div class="card">
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7441331029753278464"
-height="320"></iframe>
-</div>
-
-<div class="card">
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7429495601043554304"
-height="320"></iframe>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="fade">
-<h2>Let’s Connect</h2>
-
-<a class="btn primary" href="https://www.linkedin.com/in/karthik-dave-csm" target="_blank">
-Connect on LinkedIn
-</a>
-
-</section>
-
-<footer>
-© 2026 Karthik Dave
-</footer>
-
-<script>
-const faders = document.querySelectorAll(".fade");
-
-window.addEventListener("scroll", () => {
-  const trigger = window.innerHeight * 0.85;
-
-  faders.forEach(el => {
-    if(el.getBoundingClientRect().top < trigger){
-      el.classList.add("show");
-    }
-  });
-});
-</script>
-
-</body>
-</html>
