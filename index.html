@@ -1,156 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karthik Dave – Resume & SCWK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://cdn.tailwindcss.com"></script>
+<title>Karthik Dave – Resume & SCWK</title>
 
-  <style>
-    html { scroll-behavior: smooth; }
+<script src="https://cdn.tailwindcss.com"></script>
 
-    /* Fade-in animation */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease;
-    }
+<style>
+html { scroll-behavior: smooth; }
 
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+/* Fade animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Progress bar */
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #2563eb;
+  width: 0%;
+  z-index: 999;
+}
+</style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 transition-colors duration-500" id="body">
+
+<div id="progressBar"></div>
 
 <!-- NAV -->
 <header class="bg-white shadow sticky top-0 z-50 fade-in">
   <div class="container mx-auto flex justify-between items-center py-4 px-6">
-    <div class="text-xl font-bold text-blue-700">
-      Karthik Dave, <span class="text-sm text-gray-500">CSM</span>
+
+    <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
+      Karthik Dave, CSM
     </div>
-    <nav class="space-x-6">
-      <a href="#about" class="hover:text-blue-500">About</a>
-      <a href="#resume" class="hover:text-blue-500">Resume</a>
-      <a href="#scwk" class="hover:text-blue-500">SCWK</a>
-      <a href="#contact" class="hover:text-blue-500">Contact</a>
-    </nav>
+
+    <div class="flex items-center gap-6">
+      <nav class="space-x-4 hidden md:block">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#scwk">SCWK</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Dark mode -->
+      <button onclick="toggleDark()" class="text-sm bg-gray-200 px-3 py-1 rounded">
+        🌙
+      </button>
+    </div>
+
   </div>
 </header>
 
 <!-- ABOUT -->
-<section id="about" class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10 fade-in">
-  <div class="md:w-1/3 flex justify-center">
-    <img src="profile.jpg" class="rounded-full w-48 h-48 object-cover object-top shadow-lg hover:scale-105 transition">
-  </div>
-  <div class="md:w-2/3">
-    <h1 class="text-3xl font-bold mb-4">About Me</h1>
-    <p class="mb-4">
-      Utilizing over 14+ years of diverse industry experience in Supply Chain, Logistics, and Business Analysis.
+<section id="about" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10 fade-in">
+
+  <img src="profile.jpg"
+       class="w-48 h-48 rounded-full object-cover object-top shadow-lg hover:scale-105 transition">
+
+  <div>
+    <h1 class="text-4xl font-bold mb-4">About Me</h1>
+    <p class="mb-4 text-lg">
+      14+ years in Supply Chain, Logistics & Business Analysis delivering Agile-driven transformation.
     </p>
-    <ul class="space-y-2">
-      <li><strong>Mobile:</strong> +91 9884047448</li>
-      <li><strong>Email:</strong> <a href="mailto:Karthik.dave@gmail.com" class="text-blue-600">Karthik.dave@gmail.com</a></li>
-      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="text-blue-600">linkedin.com/in/karthik-dave-csm</a></li>
-    </ul>
+
+    <div class="flex gap-4 flex-wrap">
+      <span class="bg-blue-100 px-3 py-1 rounded">Agile</span>
+      <span class="bg-green-100 px-3 py-1 rounded">Scrum</span>
+      <span class="bg-purple-100 px-3 py-1 rounded">Supply Chain</span>
+      <span class="bg-yellow-100 px-3 py-1 rounded">Data Analytics</span>
+    </div>
   </div>
+
 </section>
 
 <!-- RESUME -->
-<section id="resume" class="bg-white py-16 fade-in">
-  <div class="container mx-auto px-6">
+<section id="resume" class="bg-white py-20 fade-in">
+<div class="container mx-auto px-6">
 
-    <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Resume Highlights</h2>
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Resume</h2>
 
-    <div class="flex justify-center gap-4 mb-8">
-      <a href="Karthik_Dave_Resume.pdf" target="_blank"
-         class="bg-blue-700 text-white px-6 py-3 rounded shadow hover:bg-blue-600 hover:scale-105 transition">
-         View Resume
-      </a>
+<div class="flex justify-center gap-4 mb-10">
+  <a href="Karthik_Dave_Resume.pdf" target="_blank"
+     class="bg-blue-700 text-white px-6 py-3 rounded hover:scale-105 transition">View</a>
 
-      <a href="Karthik_Dave_Resume.pdf" download
-         class="bg-green-600 text-white px-6 py-3 rounded shadow hover:bg-green-500 hover:scale-105 transition">
-         Download Resume
-      </a>
-    </div>
+  <a href="Karthik_Dave_Resume.pdf" download
+     class="bg-green-600 text-white px-6 py-3 rounded hover:scale-105 transition">Download</a>
+</div>
 
-    <!-- Profile Summary -->
-    <div class="mb-8">
-      <h3 class="text-xl font-semibold mb-2">Profile Summary</h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>14+ years of experience in Supply Chain Inventory and Logistics Management.</li>
-        <li>Business Analyst with Scrum Master responsibilities.</li>
-        <li>Expert in process analysis and data-driven forecasting.</li>
-      </ul>
-    </div>
+<!-- Timeline -->
+<div class="space-y-8 border-l-4 border-blue-600 pl-6">
 
-    <!-- Timeline -->
-    <div class="border-l-4 border-blue-600 pl-6 space-y-8">
-      <div>
-        <h4 class="font-semibold text-lg">YASH Technologies</h4>
-        <span class="text-sm text-gray-500">2022–2024</span>
-      </div>
-      <div>
-        <h4 class="font-semibold text-lg">Mphasis</h4>
-      </div>
-    </div>
-
+  <div>
+    <h4 class="font-semibold text-lg">YASH Technologies</h4>
+    <p class="text-sm text-gray-500">2022–2024</p>
+    <p>Improved operational efficiency using data analytics & Agile delivery.</p>
   </div>
+
+  <div>
+    <h4 class="font-semibold text-lg">Mphasis</h4>
+    <p>Optimized supply chain forecasting (95% improvement).</p>
+  </div>
+
+</div>
+
+</div>
 </section>
 
 <!-- SCWK -->
-<section id="scwk" class="bg-gray-100 py-16 fade-in text-center">
-  <h2 class="text-3xl font-bold mb-4 text-blue-700">
-    Scrum and Coffee with Karthik ☕
-  </h2>
+<section id="scwk" class="bg-gray-100 py-20 text-center fade-in">
 
-  <div class="bg-white p-8 rounded shadow max-w-xl mx-auto hover:shadow-xl hover:scale-105 transition">
-    <ul class="mb-6 space-y-2">
-      <li>Agile in Supply Chain</li>
-      <li>Scrum Simplified</li>
-      <li>Workflow Optimization</li>
-    </ul>
+<h2 class="text-3xl font-bold text-blue-700 mb-4">
+Scrum and Coffee with Karthik ☕
+</h2>
 
-    <a href="https://linkedin.com/in/karthik-dave-csm"
-       class="bg-blue-700 text-white px-6 py-3 rounded hover:scale-105 transition">
-       Explore SCWK
-    </a>
-  </div>
+<p class="max-w-2xl mx-auto mb-8">
+A personal brand where I simplify Agile, Scrum, and real-world delivery challenges into practical insights.
+</p>
+
+<div class="bg-white max-w-xl mx-auto p-8 rounded shadow hover:shadow-xl transition">
+
+<ul class="mb-6 space-y-2">
+<li>Agile Simplified</li>
+<li>Scrum for Real Projects</li>
+<li>BA + Scrum Master Thinking</li>
+<li>Delivery Mindset</li>
+</ul>
+
+<a href="https://linkedin.com/in/karthik-dave-csm"
+   class="bg-blue-700 text-white px-6 py-3 rounded hover:scale-105 transition">
+Explore SCWK
+</a>
+
+</div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-16 text-center fade-in">
-  <h2 class="text-3xl font-bold mb-6 text-blue-700">Contact</h2>
+<section id="contact" class="py-20 text-center fade-in">
 
-  <div class="flex flex-col md:flex-row justify-center gap-4">
-    <a href="mailto:Karthik.dave@gmail.com"
-       class="w-56 bg-blue-700 text-white py-3 rounded hover:scale-105 transition">
-       Email
-    </a>
+<h2 class="text-3xl font-bold text-blue-700 mb-8">Contact</h2>
 
-    <a href="https://linkedin.com/in/karthik-dave-csm"
-       class="w-56 bg-green-600 text-white py-3 rounded hover:scale-105 transition">
-       LinkedIn
-    </a>
-  </div>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+
+<a href="mailto:Karthik.dave@gmail.com"
+   class="w-56 bg-blue-700 text-white py-3 rounded hover:scale-105 transition">
+Email
+</a>
+
+<a href="https://linkedin.com/in/karthik-dave-csm"
+   class="w-56 bg-green-600 text-white py-3 rounded hover:scale-105 transition">
+LinkedIn
+</a>
+
+</div>
 </section>
 
 <!-- SCRIPT -->
 <script>
-  const elements = document.querySelectorAll('.fade-in');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  });
+// Scroll animation
+const els = document.querySelectorAll('.fade-in');
+const obs = new IntersectionObserver(entries=>{
+entries.forEach(e=>{
+if(e.isIntersecting){ e.target.classList.add('visible'); }
+});
+});
+els.forEach(el=>obs.observe(el));
 
-  elements.forEach(el => observer.observe(el));
+// Progress bar
+window.onscroll = () => {
+let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let scrolled = (winScroll / height) * 100;
+document.getElementById("progressBar").style.width = scrolled + "%";
+};
+
+// Dark mode
+function toggleDark(){
+document.body.classList.toggle("bg-gray-900");
+document.body.classList.toggle("text-white");
+}
+
 </script>
 
 </body>
