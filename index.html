@@ -32,7 +32,7 @@
   <!-- About Section -->
   <section id="about" class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
     <div class="md:w-1/3 flex justify-center">
-      <img src="profile.jpg" alt="Karthik Dave" class="rounded-full w-48 h-48 object-cover object-top shadow-lg">
+      <img src="your-photo.jpg" alt="Karthik Dave" class="rounded-full w-48 h-48 object-cover object-top shadow-lg">
     </div>
     <div class="md:w-2/3">
       <h1 class="text-3xl font-bold mb-4">About Me</h1>
@@ -163,38 +163,27 @@
     </div>
   </section>
 
-  <!-- SCWK Section - Mini Portfolio -->
+  <!-- SCWK Section - Single Card Version -->
   <section id="scwk" class="bg-gray-100 py-16">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Scrum and Coffee with Karthik (SCWK) Highlights</h2>
       <p class="mb-12 text-center max-w-2xl mx-auto">
-        Insights and practical guidance on agile, project management, and supply chain best practices from my LinkedIn brand.
+        Insights and practical guidance on Agile, project management, and supply chain best practices from my LinkedIn brand.
       </p>
 
-      <!-- Cards Grid -->
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-        <!-- Card 1 -->
-        <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="block bg-white rounded shadow hover:shadow-lg transition p-6 flex flex-col justify-between">
-          <h3 class="text-xl font-semibold mb-2">Agile in Supply Chain</h3>
-          <p class="mb-4 text-gray-700">Practical tips on applying Agile methodology to improve supply chain efficiency and team collaboration.</p>
-          <span class="mt-auto bg-blue-700 text-white px-4 py-2 rounded shadow hover:bg-blue-600 transition text-center">View on LinkedIn</span>
-        </a>
-
-        <!-- Card 2 -->
-        <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="block bg-white rounded shadow hover:shadow-lg transition p-6 flex flex-col justify-between">
-          <h3 class="text-xl font-semibold mb-2">Project Management Insights</h3>
-          <p class="mb-4 text-gray-700">Key techniques for planning, monitoring, and delivering projects successfully within IT and logistics domains.</p>
-          <span class="mt-auto bg-blue-700 text-white px-4 py-2 rounded shadow hover:bg-blue-600 transition text-center">View on LinkedIn</span>
-        </a>
-
-        <!-- Card 3 -->
-        <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="block bg-white rounded shadow hover:shadow-lg transition p-6 flex flex-col justify-between">
-          <h3 class="text-xl font-semibold mb-2">Workflow Optimization</h3>
-          <p class="mb-4 text-gray-700">Strategies for optimizing workflows, reducing bottlenecks, and increasing operational efficiency in SCM processes.</p>
-          <span class="mt-auto bg-blue-700 text-white px-4 py-2 rounded shadow hover:bg-blue-600 transition text-center">View on LinkedIn</span>
-        </a>
-
+      <!-- Single Card -->
+      <div class="bg-white rounded shadow hover:shadow-lg transition p-6 max-w-xl mx-auto">
+        <h3 class="text-xl font-semibold mb-4">SCWK Topics</h3>
+        <ul class="list-disc list-inside mb-6 space-y-2 text-gray-700">
+          <li>Agile in Supply Chain</li>
+          <li>Project Management Insights</li>
+          <li>Workflow Optimization</li>
+        </ul>
+        <div class="text-center">
+          <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded shadow hover:bg-blue-600 transition">
+            View on LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </section>
