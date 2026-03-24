@@ -1,66 +1,196 @@
-<!-- ONLY showing changed sections to avoid breaking your file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik Dave – Resume & SCWK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
 
-<!-- NAV HEADER FIX -->
-<div class="text-xl font-bold text-blue-700">
-  Karthik Dave, <span class="text-sm text-gray-500">CSM</span>
-</div>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
---------------------------------------------------
+<!-- NAV -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-xl font-bold text-blue-700">
+      Karthik Dave, <span class="text-sm text-gray-500">CSM</span>
+    </div>
+    <nav class="space-x-6">
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#scwk">SCWK</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<!-- SCWK SECTION (REPLACE FULL SECTION) -->
-<section id="scwk" class="bg-gray-100 py-16">
+<!-- ABOUT -->
+<section id="about" class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
+  <div class="md:w-1/3 flex justify-center">
+    <img src="profile.jpg" class="rounded-full w-48 h-48 object-cover object-top shadow-lg">
+  </div>
+  <div class="md:w-2/3">
+    <h1 class="text-3xl font-bold mb-4">About Me</h1>
+    <p class="mb-4">
+      Utilizing over 14+ years of diverse industry experience in Supply Chain, Logistics, and Business Analysis, targeting to excel in challenging roles in IT consulting, project management, or as a Scrum Master in Chennai.
+    </p>
+    <ul class="space-y-2">
+      <li><strong>Mobile:</strong> +91 9884047448</li>
+      <li><strong>Email:</strong> <a href="mailto:Karthik.dave@gmail.com" class="text-blue-600">Karthik.dave@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="text-blue-600">linkedin.com/in/karthik-dave-csm</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="bg-white py-16">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">
-      Scrum and Coffee with Karthik ☕ (SCWK)
+
+    <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Resume Highlights</h2>
+
+    <div class="flex justify-center gap-4 mb-8">
+      <a href="Karthik_Dave_Resume.pdf" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded">View Resume</a>
+      <a href="Karthik_Dave_Resume.pdf" download class="bg-green-600 text-white px-6 py-3 rounded">Download Resume</a>
+    </div>
+
+    <!-- Profile Summary -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Profile Summary</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>14+ years of experience in Supply Chain Inventory and Logistics Management with Agile & Waterfall methodologies.</li>
+        <li>Business Analyst at YASH Technologies Pvt. Ltd., also performing Scrum Master responsibilities.</li>
+        <li>Expert in business process analysis, consulting, and data-driven forecasting.</li>
+        <li>Improved website engagement through user-friendly content.</li>
+        <li>Strong communication, documentation, and problem-solving skills.</li>
+        <li>Proficient in HP PPM, Azure DevOps, GitLab, HP Agile Manager, MS Office, Excel, IBM Requisite Pro, Clarity, Dreamweaver.</li>
+      </ul>
+    </div>
+
+    <!-- Competencies -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Core Competencies</h3>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside">
+        <li>Strategic Planning</li>
+        <li>Process Optimization</li>
+        <li>Risk Management</li>
+        <li>Vendor Management</li>
+        <li>Quality Assurance</li>
+        <li>Change Management</li>
+        <li>Performance Metrics</li>
+        <li>Compliance Standards</li>
+        <li>Stakeholder Engagement</li>
+        <li>Continuous Improvement</li>
+        <li>Scrum Agile Development</li>
+        <li>Data Analytics & Predictive Forecasting</li>
+      </ul>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">Work Experience</h3>
+
+      <div class="mb-4">
+        <h4 class="font-semibold">Business Analyst – YASH Technologies (2022–2024)</h4>
+        <ul class="list-disc list-inside ml-4">
+          <li>Spearheaded data analytics initiatives improving efficiency.</li>
+          <li>Implemented Agile methodologies.</li>
+          <li>Business process analysis for Supply Chain.</li>
+          <li>Led content creation for e-commerce platforms.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h4 class="font-semibold">Senior Business Analyst – Mphasis</h4>
+        <ul class="list-disc list-inside ml-4">
+          <li>Optimized supply chain processes.</li>
+          <li>Improved forecasting accuracy by 95%.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold">Other Roles</h4>
+        <ul class="list-disc list-inside ml-4">
+          <li>BDO Consulting LLC</li>
+          <li>Ford Technology Services</li>
+          <li>R Systems International</li>
+          <li>Allsec Technologies</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Education</h3>
+      <p>B.Com – University of Madras (2005)</p>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Technical Skills</h3>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside">
+        <li>HP PPM</li>
+        <li>Azure DevOps</li>
+        <li>GitLab</li>
+        <li>HP Agile Manager</li>
+        <li>MS Office</li>
+        <li>Excel Power Pivot</li>
+        <li>IBM Requisite Pro</li>
+        <li>IBM Clarity</li>
+        <li>Dreamweaver</li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div>
+      <h3 class="text-xl font-semibold mb-2">Certifications</h3>
+      <ul class="list-disc list-inside">
+        <li>Certified Scrum Master (CSM)</li>
+        <li>Supply Chain & Logistics Management</li>
+        <li>SAP SCM Training</li>
+        <li>Agile BA Training</li>
+        <li>Microsoft Power BI</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCWK -->
+<section id="scwk" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-blue-700">
+      Scrum and Coffee with Karthik ☕
     </h2>
 
-    <p class="mb-12 text-center max-w-2xl mx-auto">
-      My LinkedIn series where I simplify Agile, Scrum, and Supply Chain concepts into practical, real-world insights.
-    </p>
-
-    <!-- SINGLE CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8 max-w-xl mx-auto text-center">
-
-      <h3 class="text-xl font-semibold mb-4">Key Topics</h3>
-
-      <ul class="space-y-2 mb-6 text-gray-700">
-        <li>• Agile in Supply Chain</li>
-        <li>• Project Management Insights</li>
-        <li>• Workflow Optimization</li>
+    <div class="bg-white p-8 rounded shadow max-w-xl mx-auto">
+      <ul class="mb-6 space-y-2">
+        <li>Agile in Supply Chain</li>
+        <li>Project Management Insights</li>
+        <li>Workflow Optimization</li>
       </ul>
 
-      <p class="text-sm text-gray-500 mb-6">📌 New insights shared regularly</p>
-
       <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank"
-         class="inline-block bg-blue-700 text-white px-6 py-3 rounded shadow hover:bg-blue-600 hover:scale-105 transition">
-         Explore SCWK on LinkedIn
+         class="bg-blue-700 text-white px-6 py-3 rounded">
+         View on LinkedIn
       </a>
-
     </div>
   </div>
 </section>
 
---------------------------------------------------
+<!-- CONTACT -->
+<section id="contact" class="py-16 text-center">
+  <h2 class="text-3xl font-bold mb-6 text-blue-700">Contact</h2>
 
-<!-- CONTACT SECTION (REPLACE BUTTON PART ONLY) -->
-<section id="contact" class="container mx-auto px-6 py-16">
-  <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Contact</h2>
-
-  <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-
-    <a href="mailto:Karthik.dave@gmail.com"
-       class="w-60 text-center bg-blue-700 text-white px-6 py-3 rounded shadow hover:bg-blue-600 hover:scale-105 transition">
-       📧 Email Me
-    </a>
-
-    <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank"
-       class="w-60 text-center bg-green-600 text-white px-6 py-3 rounded shadow hover:bg-green-500 hover:scale-105 transition">
-       🔗 LinkedIn
-    </a>
-
+  <div class="flex flex-col md:flex-row justify-center gap-4">
+    <a href="mailto:Karthik.dave@gmail.com" class="w-56 bg-blue-700 text-white py-3 rounded">Email</a>
+    <a href="https://linkedin.com/in/karthik-dave-csm" class="w-56 bg-green-600 text-white py-3 rounded">LinkedIn</a>
   </div>
 
-  <div class="text-center mt-6 text-gray-600">
-    <p>📞 +91 9884047448</p>
-  </div>
+  <p class="mt-4">📞 +91 9884047448</p>
 </section>
+
+</body>
+</html>
