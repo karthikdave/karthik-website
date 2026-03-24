@@ -13,7 +13,7 @@
     }
 
     section {
-      scroll-margin-top: 120px; /* SAFE FIX for header overlap */
+      scroll-margin-top: 120px;
     }
   </style>
 </head>
@@ -27,7 +27,7 @@
     <div>
       <h1 class="text-3xl md:text-4xl font-bold text-blue-700">
         Karthik Dave 
-        <span class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded-full align-middle">
+        <span class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
           CSM<sup>®</sup>
         </span>
       </h1>
@@ -35,11 +35,11 @@
     </div>
 
     <nav class="space-x-5 text-sm font-medium">
-      <a href="#about" class="hover:text-blue-700">About</a>
-      <a href="#resume" class="hover:text-blue-700">Resume</a>
-      <a href="#skills" class="hover:text-blue-700">Skills</a>
-      <a href="#scwk" class="hover:text-blue-700">SCWK</a>
-      <a href="#contact" class="hover:text-blue-700">Contact</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#scwk">SCWK</a>
+      <a href="#contact">Contact</a>
     </nav>
 
   </div>
@@ -68,14 +68,31 @@
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="max-w-6xl mx-auto px-6 py-12">
-  <h2 class="text-2xl font-bold mb-4">About</h2>
+<!-- ABOUT WITH IMAGE -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-8">
 
-  <p class="text-gray-600">
-    14+ years of experience in Supply Chain, Logistics, and Business Analysis with strong Agile and Scrum exposure. 
-    Proven ability to drive efficiency, stakeholder alignment, and delivery excellence.
-  </p>
+  <!-- PROFILE IMAGE -->
+  <img src="profile.jpg"
+       class="w-44 h-44 rounded-full object-cover object-center border shadow">
+
+  <!-- ABOUT TEXT -->
+  <div>
+    <h2 class="text-2xl font-bold mb-4">About</h2>
+
+    <p class="text-gray-600 mb-3">
+      14+ years of experience in Supply Chain, Logistics, and Business Analysis with strong Agile and Scrum exposure.
+    </p>
+
+    <p><strong>Mobile:</strong> +91 9884047448</p>
+    <p><strong>Email:</strong> Karthik.dave@gmail.com</p>
+    <p>
+      <strong>LinkedIn:</strong> 
+      <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="text-blue-600">
+        View Profile
+      </a>
+    </p>
+  </div>
+
 </section>
 
 <!-- RESUME -->
