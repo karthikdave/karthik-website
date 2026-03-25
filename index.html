@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karthik Dave – Resume & SCWK</title>
+  <title>Karthik Dave | Portfolio</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -11,35 +11,23 @@
     html { scroll-behavior: smooth; }
     section { scroll-margin-top: 100px; }
 
-    .card { transition: all 0.3s ease; }
-    .card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
-
-    .btn { transition: all 0.25s ease; }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.12); }
-
-    nav a.active { color: #1D4ED8; font-weight: 600; }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
 <!-- HEADER -->
 <header class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex justify-between items-center py-5 px-6">
-    <div>
-      <h1 class="text-3xl md:text-4xl font-bold text-blue-700">
-        Karthik Dave 
-        <span class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
-          CSM<sup>®</sup>
-        </span>
-      </h1>
-      <p class="text-sm text-gray-600">Business Analyst • Scrum Master • Agile Delivery</p>
-    </div>
-
-    <nav class="space-x-5 text-sm font-medium">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+    <h1 class="text-xl font-bold text-blue-700">Karthik Dave</h1>
+    <nav class="space-x-4 text-sm">
       <a href="#about">About</a>
-      <a href="#impact">Impact</a>
-      <a href="#resume">Experience</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Expertise</a>
       <a href="#scwk">SCWK</a>
       <a href="#contact">Contact</a>
@@ -48,115 +36,92 @@
 </header>
 
 <!-- HERO -->
-<section class="py-16 text-center bg-gradient-to-r from-blue-50 to-blue-100">
-  <h2 class="text-4xl font-bold text-blue-800 mb-4 leading-snug">
-    Business Analyst & Scrum Leader <br>
-    Driving Measurable Delivery Outcomes
-  </h2>
-
-  <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-    14+ years of experience transforming business needs into scalable Agile solutions across Supply Chain, Logistics, and Healthcare domains.
-  </p>
-
-  <div class="flex justify-center gap-4 flex-wrap">
-    <a href="Karthik_Dave_Resume.pdf" target="_blank" class="btn bg-blue-700 text-white px-6 py-2 rounded-lg">View Resume</a>
-    <a href="Karthik_Dave_Resume.pdf" download class="btn bg-green-600 text-white px-6 py-2 rounded-lg">Download Resume</a>
-  </div>
-</section>
-
-<!-- IMPACT -->
-<section id="impact" class="py-12 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl font-bold text-blue-700 mb-8 text-center">Impact Snapshot</h2>
-
-    <div class="grid md:grid-cols-4 gap-6 text-center">
-      <div class="card bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-2xl font-bold text-blue-700">20%</h3>
-        <p class="text-sm text-gray-600">Faster Sprint Delivery</p>
-      </div>
-      <div class="card bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-2xl font-bold text-blue-700">25%</h3>
-        <p class="text-sm text-gray-600">Defect Reduction</p>
-      </div>
-      <div class="card bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-2xl font-bold text-blue-700">95%</h3>
-        <p class="text-sm text-gray-600">Forecast Accuracy</p>
-      </div>
-      <div class="card bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-2xl font-bold text-blue-700">High</h3>
-        <p class="text-sm text-gray-600">Stakeholder Alignment</p>
-      </div>
-    </div>
-  </div>
+<section class="text-center py-12 bg-blue-50">
+  <h2 class="text-3xl font-bold text-blue-800">Business Analyst & Scrum Master</h2>
+  <p class="mt-3 text-gray-600">14+ Years | Agile | Supply Chain | Data Driven Delivery</p>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-10">
+<section id="about" class="max-w-5xl mx-auto p-6 flex flex-col md:flex-row items-center gap-8">
+
   <img src="profile.jpg"
-       class="w-48 h-48 rounded-full object-cover object-center shadow-xl ring-4 ring-white">
+       class="w-48 h-48 rounded-full object-cover object-center border">
 
   <div>
-    <h2 class="text-2xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-600 mb-3">
-      Results-driven Business Analyst and Scrum professional with 14+ years of experience delivering high-impact solutions using Agile methodologies, data-driven insights, and stakeholder collaboration.
-    </p>
-    <p><strong>Mobile:</strong> +91 9884047448</p>
-    <p><strong>Email:</strong> Karthik.dave@gmail.com</p>
-    <p><strong>LinkedIn:</strong> 
-      <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="text-blue-600">View Profile</a>
+    <h2 class="text-2xl font-bold mb-3">About Me</h2>
+    <p class="text-gray-600">
+      Business Analyst and Scrum professional with 14+ years experience in Supply Chain, Logistics, and Agile delivery.
     </p>
   </div>
+
 </section>
 
-<!-- EXPERIENCE (UNCHANGED) -->
-<!-- keep your full experience section as-is -->
+<!-- EXPERIENCE -->
+<section id="experience" class="bg-white py-10">
+  <div class="max-w-5xl mx-auto p-6">
+    <h2 class="text-2xl font-bold text-blue-700 mb-6">Work Experience</h2>
 
-<!-- EXPERTISE (FIXED) -->
-<section id="skills" class="bg-white py-12">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl font-bold text-blue-700 mb-8 text-center">Core Expertise</h2>
+    <div class="space-y-4">
 
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="card bg-gray-50 p-5 rounded-lg">Agile Delivery & Scrum Leadership</div>
-      <div class="card bg-gray-50 p-5 rounded-lg">Business Analysis & Process Optimization</div>
-      <div class="card bg-gray-50 p-5 rounded-lg">Data Analytics & Forecasting</div>
-      <div class="card bg-gray-50 p-5 rounded-lg">UAT, QA & Release Governance</div>
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">Associate Manager (2025–Present)</h3>
+        <p class="text-sm text-gray-600">Leading Agile delivery, stakeholder alignment, and sprint execution.</p>
+      </div>
+
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">Business Analyst – YASH Technologies (2022–2024)</h3>
+        <p class="text-sm text-gray-600">Data analytics, Agile implementation, UAT support.</p>
+      </div>
+
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">Senior Business Analyst – Mphasis</h3>
+      </div>
+
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">Consultant – BDO Qatar</h3>
+      </div>
+
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">Ford Technology Services</h3>
+      </div>
+
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">R Systems</h3>
+      </div>
+
+      <div class="card bg-gray-50 p-4 rounded">
+        <h3 class="font-semibold">Allsec Technologies</h3>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- SCWK (FIXED) -->
-<section id="scwk" class="bg-gray-100 py-12 text-center">
-  <h2 class="text-2xl font-bold text-blue-700 mb-4">
-    SCWK – Scrum and Coffee with Karthik ☕
-  </h2>
+<!-- SKILLS -->
+<section id="skills" class="py-10 text-center">
+  <h2 class="text-2xl font-bold text-blue-700 mb-6">Core Expertise</h2>
 
-  <p class="text-gray-600 mb-6 max-w-xl mx-auto">
-    Where Agile meets real-world delivery — sharing practical insights, lessons, and simplified Scrum concepts.
-  </p>
-
-  <a href="https://linkedin.com/in/karthik-dave-csm"
-     target="_blank"
-     class="btn bg-blue-700 text-white px-6 py-2 rounded-lg">
-    Explore SCWK
-  </a>
+  <div class="flex flex-wrap justify-center gap-4">
+    <div class="bg-white shadow px-5 py-3 rounded">Agile & Scrum</div>
+    <div class="bg-white shadow px-5 py-3 rounded">Business Analysis</div>
+    <div class="bg-white shadow px-5 py-3 rounded">Data Analytics</div>
+    <div class="bg-white shadow px-5 py-3 rounded">UAT & QA</div>
+  </div>
 </section>
 
-<!-- CONTACT (FIXED) -->
-<section id="contact" class="bg-white py-12 text-center">
-  <h2 class="text-2xl font-bold text-blue-700 mb-6">Contact</h2>
+<!-- SCWK -->
+<section id="scwk" class="bg-gray-100 py-10 text-center">
+  <h2 class="text-2xl font-bold text-blue-700 mb-3">SCWK</h2>
+  <p class="text-gray-600">Scrum & Coffee with Karthik – Sharing practical Agile insights.</p>
+</section>
 
-  <div class="flex justify-center gap-4 flex-wrap">
-    <a href="mailto:Karthik.dave@gmail.com"
-       class="btn bg-blue-700 text-white px-6 py-2 rounded w-48">
-      Email
-    </a>
+<!-- CONTACT -->
+<section id="contact" class="py-10 text-center">
+  <h2 class="text-2xl font-bold text-blue-700 mb-5">Contact</h2>
 
-    <a href="https://linkedin.com/in/karthik-dave-csm"
-       target="_blank"
-       class="btn bg-green-600 text-white px-6 py-2 rounded w-48">
-      LinkedIn
-    </a>
+  <div class="flex justify-center gap-4">
+    <a href="mailto:Karthik.dave@gmail.com" class="bg-blue-700 text-white px-5 py-2 rounded">Email</a>
+    <a href="https://linkedin.com/in/karthik-dave-csm" target="_blank" class="bg-green-600 text-white px-5 py-2 rounded">LinkedIn</a>
   </div>
 </section>
 
